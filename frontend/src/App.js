@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   testBackend = async () => {
-    const test = await fetch("http://localhost/api/", {
+    const test = await fetch("http://localhost/test/", {
       method: "GET",
       headers: headers,
       cache: "default"
