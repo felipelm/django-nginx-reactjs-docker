@@ -1,4 +1,4 @@
- FROM python:3
+ FROM python:3.6.7
  RUN mkdir /backend
  WORKDIR /backend
  ADD requirements.txt /backend/
