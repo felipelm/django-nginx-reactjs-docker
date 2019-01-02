@@ -1,8 +1,0 @@
-Tutorial
-env
-.vscode
-db.sqlite3
-
-__pycache__
-
-build
