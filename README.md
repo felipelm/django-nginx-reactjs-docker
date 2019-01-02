@@ -10,6 +10,16 @@ Make sure you have [docker](https://docs.docker.com/install/) and [docker-compos
 docker-compose up
 ```
 
+To start docker without it taking over the command terminal, use the following (note, this iwll not display all the output, so you may not see error messages):
+```shell
+docker-compose up -d
+```
+
+To shut down docker after staring it with the -d command, run
+```shell
+docker-compose stop
+```
+
 Then check which image is running using `docker images` and run
 ```shell
 docker run -p 8000:80 image_id sh entrypoint.sh
