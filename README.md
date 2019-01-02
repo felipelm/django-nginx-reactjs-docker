@@ -25,4 +25,12 @@ Then check which image is running using `docker images` and run
 docker run -p 8000:80 image_id sh entrypoint.sh
 ```
 
+## How to destroy all stopped containers
+
+This will force docker to rebuild these containers the next time you start docker
+
+```shell
+docker-compose rm
+```
+
 [Code example for my blog post](http://felipelinsmachado.com/connecting-django-reactjs-via-nginx-using-docker-containers/)
