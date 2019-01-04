@@ -1,20 +1,26 @@
 version: "3"
 
 services:
+  db:
+    image: postgres:10.1-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
   backend:
     build: ./backend
     volumes:
-      - ./backend/:/backend # maps host diretory to internal container directory
+      - ./backend/:/backend # maps host directory to internal container directory
     working_dir: /backend/
     command: sh entrypoint.sh
+    depends_on:
+      - db
   frontend:
-    image: node:9.7.1
+    build: ./frontend
     command: sh entrypoint.sh
     working_dir: /frontend
     volumes:
       - ./frontend/:/frontend
   nginx:
-    image: nginx:latest
+    build: ./nginx
     ports:
       - 80:8080
     volumes:
@@ -22,3 +28,6 @@ services:
       - ./frontend/build:/var/www/frontend
     depends_on:
       - backend
+
+volumes:
+  postgres_data:

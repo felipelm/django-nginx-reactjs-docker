@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from './logo.png';
 import './App.css';
 
 const headers = new Headers({
@@ -12,11 +13,11 @@ class App extends Component {
   }
 
   state = {
-    test: ''
+    test: 'nothing.'
   }
 
   testBackend = async () => {
-    const test = await fetch("http://localhost/test/", {
+    const test = await fetch("http://localhost:80/api/", {
       method: "GET",
       headers: headers,
       cache: "default"
@@ -29,9 +30,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p className="App-intro">
-          From backend: {this.state.test}
-        </p>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            The backend says: {this.state.test}
+          </p>
+        </header>
       </div>
     );
   }
