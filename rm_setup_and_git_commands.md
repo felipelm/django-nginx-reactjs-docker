@@ -32,12 +32,12 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
 ### Pull Repo
 Open git bash
 
-Go to code repo
+Go to code folder; for example:
 ```shell
 $ cd C:/_dev/code
 ```
 
-Copy clone from repo using http option "https://github.com/code-for-canada/project-thundercat.git"
+Copy clone from repo using http option
 ```shell
 $ git clone https://github.com/code-for-canada/project-thundercat.git
 ```
@@ -45,13 +45,13 @@ $ git clone https://github.com/code-for-canada/project-thundercat.git
 Login to github when prompted
 
 
-## Running the applications
+## Running the application
 To run the application
 ```shell
 $ docker-compose up
 ```
 
-Navigate to "localhost:80" to see spining lightning bolt and "localhost:80/api" to see "{"status": "I'm here"}"
+Navigate to "localhost:80" to see the spinning lightning bolt and "localhost:80/api" to see "{"status": "I'm here"}"
 
 ## Common git commands
 
@@ -63,6 +63,7 @@ $ git checkout -b <branch_name>
 ```
 
 To push the local branch to origin, do one of the following:
+
 Option 1:
 ```shell
 $ git push origin <branch_name>
@@ -74,4 +75,5 @@ $ git push --set-upstream origin <branch_name>
 ```
 
 ### Merging a change
-Do not merge into master fromt he command line. Only do so with a merge request that is reviewed by another developer
+
+Do not merge into master from the command line. Only do so via a merge request on github that is reviewed by another developer
