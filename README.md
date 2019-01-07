@@ -20,6 +20,11 @@ To shut down docker after staring it with the -d command, run
 docker-compose stop
 ```
 
+To shut down and cleanup the networkl after staring it with the -d command, run
+```shell
+docker-compose down
+```
+
 Then check which image is running using `docker images` and run
 ```shell
 docker run -p 8000:80 image_id sh entrypoint.sh
