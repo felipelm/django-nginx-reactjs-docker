@@ -1,3 +1,3 @@
-FROM node:9.7.1
+FROM node:10.15.0
 ADD . /home/node
 WORKDIR /home/node
