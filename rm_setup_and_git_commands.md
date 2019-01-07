@@ -1,27 +1,13 @@
-#Git Commands and Setup
+# Git Commands and Setup
 
-This file is to document regularly used git commands and environmental setup
+This file is to document environmental setup and git commands
 
 ## Setup Dev Environment
-
-### Pull Repo
-Open git bash
-
-Go to code repo
-```shell
-$ cd C:/_dev/code
-```
-
-Copy clone from repo using http option "https://github.com/code-for-canada/project-thundercat.git"
-```shell
-$ git clone https://github.com/code-for-canada/project-thundercat.git
-```
-
-Login to github when prompted
 
 ### Install needed applications
 
 Ensure that you have docker and docker-compose installed on your machine, as well as the rest of the Python stack.
+ * GitBash
  * Python 3.6.7
    * https://www.python.org/downloads/release/python-367/ - Windows x86-64 executable installer
    * “Install now”
@@ -43,6 +29,21 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
      * React Redux ES6 Snippets by Timothy McLane
      * ESLint by Dirk Baeumer
 
+### Pull Repo
+Open git bash
+
+Go to code repo
+```shell
+$ cd C:/_dev/code
+```
+
+Copy clone from repo using http option "https://github.com/code-for-canada/project-thundercat.git"
+```shell
+$ git clone https://github.com/code-for-canada/project-thundercat.git
+```
+
+Login to github when prompted
+
 
 ## Running the applications
 To run the application
@@ -54,7 +55,7 @@ Navigate to "localhost:80" to see spining lightning bolt and "localhost:80/api" 
 
 ## Common git commands
 
-##Adding a new branch
+## Adding a new branch
 
 To create a new branch, run the following command
 ```shell
@@ -72,5 +73,5 @@ Option 2:
 $ git push --set-upstream origin <branch_name>
 ```
 
-###Merging a change
+### Merging a change
 Do not merge into master fromt he command line. Only do so with a merge request that is reviewed by another developer
