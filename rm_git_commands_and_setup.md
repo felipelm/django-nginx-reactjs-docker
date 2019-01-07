@@ -4,6 +4,7 @@ This file is to document regularly used git commands and environmental setup
 
 ## Setup Dev Environment
 
+### Pull Repo
 Open git bash
 
 Go to code repo
@@ -16,26 +17,60 @@ Copy clone from repo using http option "https://github.com/code-for-canada/proje
 $ git clone https://github.com/code-for-canada/project-thundercat.git
 ```
 
-Login when prompted
+Login to github when prompted
 
-Edit backend/entrypoint.sh and frontend/entrypoint.sh
-Replace all \r\n with \n to prevent errors (docker interpets \r as a directory not a carriage return)
-It will not run correctly without this (we are looking at long term solutions)
+### Install needed applications
 
+Ensure that you have docker and docker-compose installed on your machine, as well as the rest of the Python stack.
+ * Python 3.6.7
+   * https://www.python.org/downloads/release/python-367/ - Windows x86-64 executable installer
+   * “Install now”
+   * Bypass character count limit option
+   * You should be able to open a Python 3.6 Desktop App and run lines of Python
+ * Docker
+ * Docker Compose
+ * Visual Studios Code
+   * Install
+     * Download VS Code for Windows
+     * Download location is default: C:\Users\cbrock\AppData\Local\Programs\Microsoft VS Code
+     * Check “Create a desktop icon”
+     * Click “Install”
+   * Customize Tools and Languages - install language specific packages
+     * Python by Microsoft
+     * Docker by Microsoft
+     * Django by Baptiste Darthenay
+     * PostgreSQL by Chris Kolkman
+     * React Redux ES6 Snippets by Timothy McLane
+     * ESLint by Dirk Baeumer
+
+
+## Running the applications
+To run the application
+```shell
+$ docker-compose up
+```
+
+Navigate to "localhost:80" to see spining lightning bolt and "localhost:80/api" to see "{"status": "I'm here"}"
 
 ## Common git commands
 
-To push upstearm (add a new branch)
+##Adding a new branch
+
+To create a new branch, run the following command
 ```shell
 $ git checkout -b <branch_name>
 ```
 
-Option 1
+To push the local branch to origin, do one of the following:
+Option 1:
 ```shell
 $ git push origin <branch_name>
 ```
 
-Option 2
+Option 2:
 ```shell
 $ git push --set-upstream origin <branch_name>
 ```
+
+###Merging a change
+Do not merge into master fromt he command line. Only do so with a merge request that is reviewed by another developer
