@@ -4,11 +4,25 @@ This project serves as an example of a deployment frontend (ReactJS) and backend
 
 ## How to run
 
-Make sure you have [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed and run
+Make sure you have [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
+
+Known issue with \r\n line endings. Open up all entrypoint.sh files in the repository and replace \r\n with \n in Notepad++. This will only need to be done once.
+
+ Run:
 
 ```shell
 docker-compose up
 ```
+
+Then, in the browser, go to localhost:80 and you should see the application with a response from the backend.
+
+When killing the server, be sure to cleanup your containers.
+
+```shell
+docker-compose down
+```
+
+## Notes on docker
 
 To start docker without it taking over the command terminal, use the following (note, this iwll not display all the output, so you may not see error messages):
 ```shell
@@ -30,12 +44,8 @@ Then check which image is running using `docker images` and run
 docker run -p 8000:80 image_id sh entrypoint.sh
 ```
 
-### How to destroy all stopped containers
-
-This will force docker to rebuild these containers the next time you start docker
+This will destory all stopped containers and force docker to rebuild these containers the next time you start docker
 
 ```shell
 docker-compose rm
 ```
-
-[Code example for my blog post](http://felipelinsmachado.com/connecting-django-reactjs-via-nginx-using-docker-containers/)
