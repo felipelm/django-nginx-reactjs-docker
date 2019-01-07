@@ -6,8 +6,6 @@ This project serves as an example of a deployment frontend (ReactJS) and backend
 
 Make sure you have [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
 
-Known issue with \r\n line endings. Open up all entrypoint.sh files in the repository and replace \r\n with \n in Notepad++. This will only need to be done once.
-
  Run:
 
 ```shell
