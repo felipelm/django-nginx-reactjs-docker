@@ -20,6 +20,12 @@ When killing the server, be sure to cleanup your containers.
 docker-compose down
 ```
 
+If you want to make JS changes, you must login to the front end container and build the JS.
+```shell
+docker exec -it containerid /bin/bash
+yarn build
+```
+
 ## Notes on docker
 
 To start docker without it taking over the command terminal, use the following (note, this iwll not display all the output, so you may not see error messages):
