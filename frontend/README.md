@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following commands.
+
+To get to the project directory, login to the docker conatainer with the following command: `docker exec -it container_id /bin/bash` where `container_id` is the id of the docker frontend container. This id can be found by running `docker ps`.
 
 ### `npm start`
 
