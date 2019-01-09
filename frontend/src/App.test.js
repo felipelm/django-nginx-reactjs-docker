@@ -12,3 +12,9 @@ it('renders without crashing', () => {
 it('renders without crashing', () => {
   shallow(<App />);
 });
+
+it('renders initial message from backend', () => {
+  const wrapper = shallow(<App />);
+  const initialMessage = <p>The backend says: nothing.</p>;
+  expect(wrapper.contains(initialMessage)).toEqual(true);
+});
