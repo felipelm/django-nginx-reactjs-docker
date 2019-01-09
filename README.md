@@ -21,6 +21,7 @@ docker-compose down
 ```
 
 If you want to make JS changes, you must login to the front end container and build the JS.
+This is a temporary solution until we have hot-reloading setup for local development.
 ```shell
 docker exec -it containerid /bin/bash
 yarn build
