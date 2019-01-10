@@ -20,4 +20,10 @@
 
  i.e.
 
-... add example from Francis
+' /usr/bin/env: ‘python\r’: No such file or directory' in error message
+
+Open '.gitattributes'
+
+Add '*.py -crlf'
+
+Commit, replace in notepad++
