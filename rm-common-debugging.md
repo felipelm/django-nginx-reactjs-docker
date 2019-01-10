@@ -1,4 +1,4 @@
-# List of known issues
+# List of Common Debugging
 
  * Cannot use VM on windows 10 and Docker at the same time
  * Cannot VPN into network and use Docker (nginex crashes) when working remotely
