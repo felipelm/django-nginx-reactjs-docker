@@ -28,6 +28,7 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
      * PostgreSQL by Chris Kolkman
      * React Redux ES6 Snippets by Timothy McLane
      * ESLint by Dirk Baeumer
+     * Git History Diff by Hui Zhou
 
 ### Pull Repo
 Open git bash
