@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.15.8
 
 # Make /var/cache/nginx/ writable by non-root users
 RUN chgrp nginx /var/cache/nginx/
