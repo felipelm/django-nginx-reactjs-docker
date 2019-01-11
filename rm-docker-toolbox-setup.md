@@ -2,6 +2,17 @@
 
 This document outlines additional setup steps that need to be taken in order to set up the environment when using Docker Toolbox rather than Docker for Windows.
 
+DockerToolbox is for older Mac and Windows systems that do not meet the requirements for Docker for Mac or Docker for Windows.
+
+This includes:
+ * Any 32 bit OS
+ * Windows 7 (all versions)
+ * Windows 10 Home
+ * Mac hardware prior to 2010
+ * macOS El Capitain prior to version 10.11
+ * Virtual Box prior to version 4.3.30
+ * Any system with less than 4GB of Ram.
+
 ## Virtual Box configuration
 
 From https://stackoverflow.com/questions/42866013/docker-toolbox-localhost-not-working
