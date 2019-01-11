@@ -2,7 +2,11 @@
 
  * Cannot use VM on windows 10 and Docker at the same time
  * Cannot VPN into network and use Docker (nginex crashes) when working remotely
+   * This seems to be related to the network drives?
+   * If docker is running and then I vpn into the network, the computer detects no network drives
+   * After running 'docker-compose down' and restating docker, the network drives appear
  * Cannot execute 'docker exec' command in git bash
+ * If you are using DockerToolbox rather than Docker for Windows on Windows, see rm-docker-toolbox-setup
 
  ## Debugging '...\r'
 
