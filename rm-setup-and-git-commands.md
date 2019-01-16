@@ -29,6 +29,12 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
      * React Redux ES6 Snippets by Timothy McLane
      * ESLint by Dirk Baeumer
      * Git History Diff by Hui Zhou
+   * Linting Configuration
+     * Pylint:
+       1. Open 'PROJECT-THUNDERCAT - .vscode - settings.json'
+       2. Search for 'python.linting.pylintEnabled' and make sure it is set to 'true' (User and Workspace settings)
+       3. Now, you can edit the desired settings from *.pylintrc* file (to disable messages, see line 54 of the config file)
+       4. Click [here](http://pylint-messages.wikidot.com/all-messages) for more details on most of the Pylint errors/warnings
 
 ### Pull Repo
 Open git bash
