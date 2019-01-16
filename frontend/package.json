@@ -6,6 +6,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "react": "^16.7.0",
+    "react-app-polyfill": "^0.2.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2",
     "react-test-renderer": "^16.7.0"
@@ -22,7 +23,7 @@
   "browserslist": [
     ">0.2%",
     "not dead",
-    "not ie <= 11",
+    "not ie <= 8",
     "not op_mini all"
   ]
 }
