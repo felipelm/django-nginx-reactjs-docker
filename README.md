@@ -26,7 +26,7 @@ This script will run both backend and frontend tests
 ./run-tests.sh
 ```
 
-Note: need to Ctrl+C a few times to get out of the frontend test.
+Note: will need to press q after npm tests finish
 
 
 ## Notes on docker
