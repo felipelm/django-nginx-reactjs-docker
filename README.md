@@ -22,8 +22,14 @@ docker-compose down
 
 ## How to tests
 This script will run both backend and frontend tests
+
+In gitbash:
 ```shell
 ./run-tests.sh
+```
+In powershell:
+```shell
+.\run-tests.sh
 ```
 
 Note: will need to press q after npm tests finish
