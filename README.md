@@ -21,9 +21,12 @@ docker-compose down
 ```
 
 ## How to tests
+This script will run both backend and frontend tests
 ```shell
 ./run-tests.sh
 ```
+
+Note: need to Ctrl+C a few times to get out of the frontend test.
 
 
 ## Notes on docker

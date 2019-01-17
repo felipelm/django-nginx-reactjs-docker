@@ -1,8 +1,9 @@
 #!/bin/bash
-# This works
+# Build docker (can comment out if already built)
 docker-compose build
+# Test the backened
 docker-compose run \
   --rm backend ./manage.py test
-# This fails
-#docker-compose run \
-#  --rm frontend npm test
+# Test the frontend
+docker-compose run \
+  --rm frontend npm test
