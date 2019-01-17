@@ -31,10 +31,18 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
      * Git History Diff by Hui Zhou
    * Linting Configuration
      * Pylint:
-       1. Open 'PROJECT-THUNDERCAT - .vscode - settings.json'
+       1. Open '*.\project-thundercat\.vscode\settings.json*' file
        2. Search for 'python.linting.pylintEnabled' and make sure it is set to 'true' (User and Workspace settings)
        3. Now, you can edit the desired settings from *.pylintrc* file (to disable messages, see line 54 of the config file)
        4. Click [here](http://pylint-messages.wikidot.com/all-messages) for more details on most of the Pylint errors/warnings
+     * ESLint:
+       1. Open '*.\project-thundercat\.vscode\settings.json*' file
+       2. Search for 'eslint.enable' and make sure it is set to 'true' (User and Workspace settings)
+       3. Select 'USER SETTINGS' tab
+       4. Search for 'eslint.options', select 'edit' and then 'copy to settings'
+       5. Then add the folowing settings: {"configFile": "C:\\_DEV\\IdeaProjects\\thundercat\\project-thundercat\\frontend\\eslint.json"}
+       6. Now, you can add/edit/remove rules from *eslint.json* file
+       7. Click [here](https://eslint.org/) for more details about **ESLint** or [here](https://github.com/airbnb/javascript/tree/master/react#basic-rules) to know more about the Airbnb React style
 
 ### Pull Repo
 Open git bash

@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": ["error", 2],
+        "quotes": ["error", "single"],
+        "linebreak-style": 0
+    }
+}
