@@ -20,6 +20,12 @@ When killing the server, be sure to cleanup your containers.
 docker-compose down
 ```
 
+## How to tests
+```shell
+./run-tests.sh
+```
+
+
 ## Notes on docker
 
 To start docker without it taking over the command terminal, use the following (note, this iwll not display all the output, so you may not see error messages):
