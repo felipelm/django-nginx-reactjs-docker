@@ -32,7 +32,7 @@ In powershell:
 .\run-tests.sh
 ```
 
-Note: will need to press q after npm tests finish
+Note: will need to press [Ctrl]+[C] after npm tests finish
 
 
 ## Notes on docker
