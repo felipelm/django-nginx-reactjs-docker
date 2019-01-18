@@ -3,7 +3,7 @@
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 # Build docker (can comment out if already built)
-#docker-compose build
+docker-compose build
 # Test the backened
 printf "**** ${BLUE}Begin backend tests${NC} ***\n"
 docker-compose run \
