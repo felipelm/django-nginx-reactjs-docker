@@ -38,10 +38,17 @@ Ensure that you have docker and docker-compose installed on your machine, as wel
      * ESLint:
        1. Open '*.\project-thundercat\.vscode\settings.json*' file
        2. Search for 'eslint.enable' and make sure it is set to 'true' (User and Workspace settings)
-       3. Select 'USER SETTINGS' tab
-       4. Search for 'eslint.options', select 'edit' and then 'copy to settings'
-       5. Then add the folowing settings: {"configFile": "C:\\_DEV\\IdeaProjects\\thundercat\\project-thundercat\\frontend\\eslint.json"}
-       6. Now, you can add/edit/remove rules from *eslint.json* file
+       3. Select 'USER SETTINGS' tab  in the right hand side window of the settings file
+       4. Add the following parameter: "eslint.options": {"configFile": "<path_of_your_project_root>\\\\frontend\\\\eslint.json"}
+       5. ESLint is now installed and configured
+           * If ESLint is not working, do the following steps:
+              1. Close Docker: Right Click on Docker icon + Quit Docker
+              2. Navigate in your Windows explorer and delete the folder called '*node_modules*' under '.\\\\project-thundercat\\\\frontend'
+              3. Start Docker
+              4. Open a powershell window and do a '*docker-compose up*'
+              5. Wait a couple minutes to make sure that all packages have been downloaded
+              6. Restart VS Code
+       6. You can also add/edit/remove rules from *eslint.json* file     
        7. Click [here](https://eslint.org/) for more details about **ESLint** or [here](https://github.com/airbnb/javascript/tree/master/react#basic-rules) to know more about the Airbnb React style
 
 ### Pull Repo
