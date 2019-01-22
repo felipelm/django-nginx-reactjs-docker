@@ -1,42 +1,30 @@
+/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import logo from './logo.png';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
-
-const headers = new Headers({
-  Accept: 'application/json',
-  'Content-Type': 'application/json',
-});
+import Home from './Home.jsx';
+import Experiment from './Experiment.jsx';
+import Status from './Status.jsx';
 
 class App extends Component {
-  componentWillMount() {
-    this.testBackend();
-  }
-
-  state = {
-    test: 'nothing.',
-  }
-
-  testBackend = async () => {
-    const test = await fetch('http://localhost:80/api/', {
-      method: 'GET',
-      headers,
-      cache: 'default',
-    });
-    const testJson = await test.json();
-    if (testJson && testJson.status) {
-      this.setState({ test: testJson.status });
-    }
-  }
-
   render() {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>
-            The backend says: {this.state.test}
-          </p>
-        </header>
+        <Router>
+          <div>
+            <div>
+              <Link to="/">Home</Link>
+              <span> </span>
+              <Link to="/experiment">Experiment</Link>
+              <span> </span>
+              <Link to="/status">Status</Link>
+            </div>
+            <hr />
+            <Route exact path="/" component={Home} />
+            <Route path="/experiment" component={Experiment} />
+            <Route path="/status" component={Status} />
+          </div>
+        </Router>
       </div>
     );
   }
