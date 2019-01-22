@@ -1,10 +1,10 @@
+/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import logo from './logo.png';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home.jsx';
 import Experiment from './Experiment.jsx';
 import Status from './Status.jsx';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {

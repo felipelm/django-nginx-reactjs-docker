@@ -1,5 +1,5 @@
+/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import logo from './logo.png';
 import './App.css';
 
 class Experiment extends Component {
